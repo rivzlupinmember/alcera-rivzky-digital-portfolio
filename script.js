@@ -46,6 +46,31 @@ tailwind.config = {
             }
         });
 
+// Direct email inquiry form
+        const inquiryForm = document.getElementById('inquiry-form');
+
+        inquiryForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            if (!inquiryForm.reportValidity()) {
+                return;
+            }
+
+            const formData = new FormData(inquiryForm);
+            const subject = formData.get('subject').trim();
+            const body = [
+                `Name: ${formData.get('name').trim()}`,
+                `Email: ${formData.get('email').trim()}`,
+                '',
+                formData.get('message').trim()
+            ].join('\n');
+            const mailto = new URL('mailto:rivzkyalcera@gmail.com');
+            mailto.searchParams.set('subject', subject);
+            mailto.searchParams.set('body', body);
+
+            window.location.href = mailto.href;
+        });
+
 // Mobile Navigation Toggle
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
