@@ -41,10 +41,19 @@
                     <a href="#contact" class="text-gray-700 hover:text-accent-blue transition-colors">Contact</a>
                 </nav>
 
-                <!-- Mobile Menu Button -->
-                <button id="menu-btn" class="md:hidden text-gray-600 hover:text-gray-900 focus:outline-none p-2" aria-label="Toggle Navigation Menu">
-                    <i class="fa-solid fa-bars text-xl"></i>
-                </button>
+                <div class="portfolio-header-controls">
+                    <label class="sr-only" for="theme-select">Color theme</label>
+                    <select id="theme-select" class="portfolio-theme-select" aria-label="Color theme">
+                        <option value="system">System</option>
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                    </select>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="menu-btn" class="md:hidden text-gray-600 hover:text-gray-900 focus:outline-none p-2" aria-label="Toggle Navigation Menu">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
             </div>
         </div>
 

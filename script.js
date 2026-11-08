@@ -18,6 +18,34 @@ tailwind.config = {
             }
         }
 
+// Color theme selector
+        const themeSelect = document.getElementById('theme-select');
+        const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+        function applyTheme(mode) {
+            const theme = mode === 'system'
+                ? (systemTheme.matches ? 'dark' : 'light')
+                : mode;
+
+            document.documentElement.dataset.theme = theme;
+            document.documentElement.dataset.themeMode = mode;
+            themeSelect.value = mode;
+            localStorage.setItem('portfolio-theme', mode);
+        }
+
+        const savedTheme = localStorage.getItem('portfolio-theme');
+        applyTheme(['system', 'light', 'dark'].includes(savedTheme) ? savedTheme : 'system');
+
+        themeSelect.addEventListener('change', () => {
+            applyTheme(themeSelect.value);
+        });
+
+        systemTheme.addEventListener('change', () => {
+            if (document.documentElement.dataset.themeMode === 'system') {
+                applyTheme('system');
+            }
+        });
+
 // Mobile Navigation Toggle
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
