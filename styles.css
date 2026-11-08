@@ -35,11 +35,40 @@
     display: none;
 }
 
+.header-profile-photo {
+    display: block;
+    flex: 0 0 2.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    overflow: hidden;
+    border-radius: 9999px;
+}
+
+.header-photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 28%;
+}
+
+.header-photo-dark {
+    display: none;
+}
+
 html[data-theme="dark"] .profile-photo-light {
     display: none;
 }
 
 html[data-theme="dark"] .profile-photo-dark {
+    display: block;
+}
+
+html[data-theme="dark"] .header-photo-light {
+    display: none;
+}
+
+html[data-theme="dark"] .header-photo-dark {
     display: block;
 }
 

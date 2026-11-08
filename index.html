@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=profile-1">
+    <link rel="stylesheet" href="styles.css?v=header-photo-1">
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed flex flex-col min-h-screen">
 
@@ -20,9 +20,10 @@
             <div class="flex justify-between items-center h-16">
                 <!-- Brand / Name -->
                 <a href="#home" class="flex items-center space-x-3 group">
-                    <div class="w-10 h-10 rounded-lg bg-navy-900 text-white flex items-center justify-center font-bold text-lg group-hover:bg-accent-blue transition-colors">
-                        RBA
-                    </div>
+                    <span class="header-profile-photo">
+                        <img src="assets/profile-light.jpg" alt="" class="header-photo header-photo-light" aria-hidden="true">
+                        <img src="assets/profile-dark.jpg" alt="" class="header-photo header-photo-dark" aria-hidden="true">
+                    </span>
                     <div>
                         <span class="font-bold text-gray-900 text-lg block leading-tight">Rivzky B. Alcera</span>
                         <span class="text-xs text-gray-500 block">BSIT Student | Aspiring IT Officer</span>
@@ -572,6 +573,6 @@
     </div>
 
     <!-- JavaScript for Mobile Menu and Modals -->
-    <script src="script.js?v=profile-1"></script>
+    <script src="script.js?v=header-photo-1"></script>
 </body>
 </html>
