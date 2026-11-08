@@ -1,0 +1,11 @@
+/* Small site-wide enhancements; layout and component styling use Tailwind utilities. */
+:focus-visible {
+    outline: 3px solid #008DDA;
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto !important;
+    }
+}

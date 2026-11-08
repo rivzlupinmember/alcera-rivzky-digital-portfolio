@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rivzky Barasona Alcera | Digital Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed flex flex-col min-h-screen">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Brand / Name -->
+                <a href="#home" class="flex items-center space-x-3 group">
+                    <div class="w-10 h-10 rounded-lg bg-navy-900 text-white flex items-center justify-center font-bold text-lg group-hover:bg-accent-blue transition-colors">
+                        RBA
+                    </div>
+                    <div>
+                        <span class="font-bold text-gray-900 text-lg block leading-tight">Rivzky B. Alcera</span>
+                        <span class="text-xs text-gray-500 block">BSIT Student | Aspiring IT Officer</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                    <a href="#home" class="text-gray-700 hover:text-accent-blue transition-colors">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-accent-blue transition-colors">About</a>
+                    <a href="#skills" class="text-gray-700 hover:text-accent-blue transition-colors">Skills</a>
+                    <a href="#projects" class="text-gray-700 hover:text-accent-blue transition-colors">Projects</a>
+                    <a href="#experience" class="text-gray-700 hover:text-accent-blue transition-colors">Experience</a>
+                    <a href="#education" class="text-gray-700 hover:text-accent-blue transition-colors">Education</a>
+                    <a href="#certifications" class="text-gray-700 hover:text-accent-blue transition-colors">Certifications</a>
+                    <a href="#contact" class="text-gray-700 hover:text-accent-blue transition-colors">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="md:hidden text-gray-600 hover:text-gray-900 focus:outline-none p-2" aria-label="Toggle Navigation Menu">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden border-b border-gray-200 bg-white px-4 pt-2 pb-4 space-y-2 text-sm font-medium">
+            <a href="#home" class="block py-2 text-gray-700 hover:text-accent-blue">Home</a>
+            <a href="#about" class="block py-2 text-gray-700 hover:text-accent-blue">About</a>
+            <a href="#skills" class="block py-2 text-gray-700 hover:text-accent-blue">Skills</a>
+            <a href="#projects" class="block py-2 text-gray-700 hover:text-accent-blue">Projects</a>
+            <a href="#experience" class="block py-2 text-gray-700 hover:text-accent-blue">Experience</a>
+            <a href="#education" class="block py-2 text-gray-700 hover:text-accent-blue">Education</a>
+            <a href="#certifications" class="block py-2 text-gray-700 hover:text-accent-blue">Certifications</a>
+            <a href="#contact" class="block py-2 text-gray-700 hover:text-accent-blue">Contact</a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section id="home" class="bg-gradient-to-b from-slate-100 to-gray-50 py-16 md:py-24 border-b border-gray-200">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                    <!-- Text Profile -->
+                    <div class="flex-1 space-y-6 text-center md:text-left">
+                        <div class="inline-block px-3 py-1 bg-blue-100 text-accent-blue font-semibold text-xs rounded-full uppercase tracking-wider">
+                            Digital Portfolio
+                        </div>
+                        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-navy-800 tracking-tight">
+                            Rivzky Barasona Alcera
+                        </h1>
+                        <p class="text-lg md:text-xl text-gray-600 font-medium">
+                            4th-Year BSIT Student & Aspiring IT Officer
+                        </p>
+                        <p class="text-gray-600 max-w-2xl text-sm sm:text-base">
+                            Building foundational skills in IT infrastructure, web systems, database management, and technical troubleshooting to support digital transformation in public service and enterprise environments.
+                        </p>
+                        <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-2">
+                            <a href="#contact" class="px-6 py-3 bg-navy-900 hover:bg-accent-blue text-white font-semibold rounded-lg shadow-md transition-colors text-sm">
+                                Get In Touch
+                            </a>
+                            <a href="#projects" class="px-6 py-3 bg-white hover:bg-gray-100 text-gray-800 font-semibold rounded-lg border border-gray-300 shadow-sm transition-colors text-sm">
+                                View Projects
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Profile Avatar Placeholder -->
+                    <div class="flex-shrink-0">
+                        <div class="w-48 h-48 sm:w-56 sm:h-56 rounded-full bg-gradient-to-tr from-navy-900 to-accent-blue p-1.5 shadow-xl">
+                            <div class="w-full h-full rounded-full bg-white flex flex-col items-center justify-center text-center p-4">
+                                <div class="w-20 h-20 rounded-full bg-navy-800 text-white flex items-center justify-center font-bold text-2xl mb-2">
+                                    RBA
+                                </div>
+                                <span class="text-xs font-semibold text-gray-700">Rivzky B. Alcera</span>
+                                <span class="text-[10px] text-gray-500">STI College–Legazpi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-16 bg-white border-b border-gray-200">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-navy-800">About Me</h2>
+                    <div class="w-16 h-1 bg-accent-blue mx-auto mt-2 rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Personal Intro -->
+                    <div class="md:col-span-2 bg-gray-50 p-6 sm:p-8 rounded-xl border border-gray-200 space-y-4">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Personal Introduction</h3>
+                        <p class="text-gray-700 text-sm sm:text-base leading-relaxed">
+                            Welcome to my digital portfolio! I am Rivzky Barasona Alcera, a fourth-year Bachelor of Science in Information Technology (BSIT) student at STI College–Legazpi. Driven by an interest in technology, systems administration, and public service, I have learned foundational skills in web development, database management systems, network fundamentals, computer hardware maintenance, and technical support. My academic journey has equipped me with both technical knowledge and essential interpersonal competencies to contribute effectively to organizational IT operations. I continue to improve my abilities through academic projects, teamwork, and hands-on learning experiences. I invite you to explore my portfolio to learn more about my academic achievements, technical projects, and professional background.
+                        </p>
+                    </div>
+
+                    <!-- Sidebar Cards -->
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                            <h4 class="font-bold text-gray-900 mb-3 flex items-center gap-2">
+                                <i class="fa-solid fa-compass text-accent-blue"></i> Career Goals
+                            </h4>
+                            <p class="text-gray-600 text-xs sm:text-sm">
+                                To launch a meaningful career as an IT Officer within regional government agencies or enterprise organizations, focusing on systems administration, user support, network maintenance, and digital transformation.
+                            </p>
+                        </div>
+
+                        <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                            <h4 class="font-bold text-gray-900 mb-3 flex items-center gap-2">
+                                <i class="fa-solid fa-heart text-accent-blue"></i> Interests & Hobbies
+                            </h4>
+                            <ul class="text-gray-600 text-xs sm:text-sm space-y-1.5">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-green-500 text-[10px]"></i> Cloud Computing Fundamentals</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-green-500 text-[10px]"></i> AI Tools for Research & Verification</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-green-500 text-[10px]"></i> Hardware Maintenance & Troubleshooting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-16 bg-gray-50 border-b border-gray-200">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-navy-800">Skills & Competencies</h2>
+                    <div class="w-16 h-1 bg-accent-blue mx-auto mt-2 rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Technical Skills -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm space-y-4">
+                        <div class="flex items-center gap-3 border-b border-gray-100 pb-3">
+                            <div class="w-10 h-10 rounded-lg bg-blue-50 text-accent-blue flex items-center justify-center">
+                                <i class="fa-solid fa-code text-lg"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900">Programming & Web</h3>
+                        </div>
+                        <ul class="space-y-3 text-sm">
+                            <li class="flex justify-between items-center"><span class="text-gray-700">Java</span><span class="text-xs px-2 py-1 bg-blue-50 text-accent-blue font-semibold rounded">Foundational</span></li>
+                            <li class="flex justify-between items-center"><span class="text-gray-700">Basic C#</span><span class="text-xs px-2 py-1 bg-blue-50 text-accent-blue font-semibold rounded">Basic</span></li>
+                            <li class="flex justify-between items-center"><span class="text-gray-700">Basic Python</span><span class="text-xs px-2 py-1 bg-blue-50 text-accent-blue font-semibold rounded">Basic</span></li>
+                            <li class="flex justify-between items-center"><span class="text-gray-700">HTML / CSS / JavaScript / PHP</span><span class="text-xs px-2 py-1 bg-blue-50 text-accent-blue font-semibold rounded">Foundational</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Systems & Infrastructure -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm space-y-4">
+                        <div class="flex items-center gap-3 border-b border-gray-100 pb-3">
+                            <div class="w-10 h-10 rounded-lg bg-blue-50 text-accent-blue flex items-center justify-center">
+                                <i class="fa-solid fa-server text-lg"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900">IT Systems & Support</h3>
+                        </div>
+                        <ul class="space-y-3 text-sm">
+                            <li class="flex justify-between items-center"><span class="text-gray-700">SQL / MySQL Fundamentals</span><span class="text-xs px-2 py-1 bg-blue-50 text-accent-blue font-semibold rounded">Foundational</span></li>
+                            <li class="flex justify-between items-center"><span class="text-gray-700">Hardware Troubleshooting</span><span class="text-xs px-2 py-1 bg-blue-50 text-accent-blue font-semibold rounded">Developing</span></li>
+                            <li class="flex justify-between items-center"><span class="text-gray-700">Network Fundamentals</span><span class="text-xs px-2 py-1 bg-blue-50 text-accent-blue font-semibold rounded">Basic</span></li>
+                            <li class="flex justify-between items-center"><span class="text-gray-700">AWS Cloud Foundations</span><span class="text-xs px-2 py-1 bg-yellow-50 text-yellow-700 font-semibold rounded">In Progress</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm space-y-4">
+                        <div class="flex items-center gap-3 border-b border-gray-100 pb-3">
+                            <div class="w-10 h-10 rounded-lg bg-blue-50 text-accent-blue flex items-center justify-center">
+                                <i class="fa-solid fa-users text-lg"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900">Soft Skills</h3>
+                        </div>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent-blue text-xs"></i> Effective Interpersonal Communication</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent-blue text-xs"></i> Teamwork & Collaboration</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent-blue text-xs"></i> Active Listening & Adaptability</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent-blue text-xs"></i> Problem-Solving Mindset</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent-blue text-xs"></i> Responsible Decision-Making</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 bg-white border-b border-gray-200">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-navy-800">Sample Works & Projects</h2>
+                    <div class="w-16 h-1 bg-accent-blue mx-auto mt-2 rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Capstone Project Card -->
+                    <div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden shadow-sm flex flex-col">
+                        <div class="p-6 flex-grow space-y-3">
+                            <span class="text-xs font-semibold px-2.5 py-1 bg-blue-100 text-accent-blue rounded">Featured Capstone</span>
+                            <h3 class="font-bold text-gray-900 text-lg leading-snug">Web-Based Barangay Management System</h3>
+                            <p class="text-gray-600 text-xs sm:text-sm">
+                                Developed for Barangay Sagpon, Daraga, Albay featuring OCR-based document digitization, resident registration, blotter tracking, and offline functionality.
+                            </p>
+                            <div class="pt-2">
+                                <h4 class="text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">Demonstrated Skills:</h4>
+                                <p class="text-xs text-gray-600">Documentation, UI Design, Research, System Testing, Client Communication</p>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-gray-100 border-t border-gray-200">
+                            <button onclick="openModal('capstone')" class="w-full py-2 bg-navy-900 hover:bg-accent-blue text-white text-xs font-semibold rounded transition-colors">
+                                View Project Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- SmartLedger Card -->
+                    <div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden shadow-sm flex flex-col">
+                        <div class="p-6 flex-grow space-y-3">
+                            <span class="text-xs font-semibold px-2.5 py-1 bg-gray-200 text-gray-700 rounded">Academic Project</span>
+                            <h3 class="font-bold text-gray-900 text-lg leading-snug">SmartLedger</h3>
+                            <p class="text-gray-600 text-xs sm:text-sm">
+                                AI-assisted personal & micro-business finance system supporting budget tracking, transaction categorization, and usability evaluation.
+                            </p>
+                            <div class="pt-2">
+                                <h4 class="text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">Demonstrated Skills:</h4>
+                                <p class="text-xs text-gray-600">Requirements Gathering, UI Design Assistance, Technical Documentation, System Testing</p>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-gray-100 border-t border-gray-200">
+                            <button onclick="openModal('smartledger')" class="w-full py-2 bg-navy-900 hover:bg-accent-blue text-white text-xs font-semibold rounded transition-colors">
+                                View Project Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- TransEase Card -->
+                    <div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden shadow-sm flex flex-col">
+                        <div class="p-6 flex-grow space-y-3">
+                            <span class="text-xs font-semibold px-2.5 py-1 bg-gray-200 text-gray-700 rounded">Academic Project</span>
+                            <h3 class="font-bold text-gray-900 text-lg leading-snug">TransEase</h3>
+                            <p class="text-gray-600 text-xs sm:text-sm">
+                                Smart tricycle fare & passenger management system assisting local transport management through fare calculation and layout prototyping.
+                            </p>
+                            <div class="pt-2">
+                                <h4 class="text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">Demonstrated Skills:</h4>
+                                <p class="text-xs text-gray-600">Systems Analysis, Specification Organizing, UI Mockups, Functionality Testing</p>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-gray-100 border-t border-gray-200">
+                            <button onclick="openModal('transease')" class="w-full py-2 bg-navy-900 hover:bg-accent-blue text-white text-xs font-semibold rounded transition-colors">
+                                View Project Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-16 bg-gray-50 border-b border-gray-200">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-navy-800">Experience & Involvement</h2>
+                    <div class="w-16 h-1 bg-accent-blue mx-auto mt-2 rounded-full"></div>
+                </div>
+
+                <div class="space-y-6 max-w-4xl mx-auto">
+                    <!-- Experience Item 1 -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm flex flex-col sm:flex-row gap-4">
+                        <div class="w-12 h-12 rounded-lg bg-blue-50 text-accent-blue flex-shrink-0 flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                                <h3 class="font-bold text-gray-900 text-base">Capstone Project Experience</h3>
+                                <span class="text-xs font-medium text-gray-500">3rd Year – Present (2026)</span>
+                            </div>
+                            <p class="text-xs font-semibold text-accent-blue">Barangay Sagpon, Daraga, Albay</p>
+                            <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                                Contributed to the development of the Web-Based Barangay Management System through system documentation, user interface design, research, and system testing. Participated in presenting the system to the barangay client on November 6, 2026, and gathering feedback to improve user experience.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 2 -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm flex flex-col sm:flex-row gap-4">
+                        <div class="w-12 h-12 rounded-lg bg-blue-50 text-accent-blue flex-shrink-0 flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                                <h3 class="font-bold text-gray-900 text-base">NSTP Community Outreach Volunteer</h3>
+                                <span class="text-xs font-medium text-gray-500">Jan 2024 & June 2024</span>
+                            </div>
+                            <p class="text-xs font-semibold text-accent-blue">Matanag, Legazpi City & Bonga, Bacacay, Albay</p>
+                            <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                                Participated as a student organizer and volunteer for community outreach projects under NSTP 1 & 2 ("Techplorers" and "Dunong Kontra Droga"), promoting literacy, digital awareness, and civic responsibility.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-16 bg-white border-b border-gray-200">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-navy-800">Educational Background</h2>
+                    <div class="w-16 h-1 bg-accent-blue mx-auto mt-2 rounded-full"></div>
+                </div>
+
+                <div class="space-y-6 max-w-4xl mx-auto">
+                    <!-- Tertiary -->
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 flex flex-col sm:flex-row gap-4">
+                        <div class="w-12 h-12 rounded-lg bg-navy-900 text-white flex-shrink-0 flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="space-y-1">
+                            <span class="text-xs font-bold text-accent-blue uppercase tracking-wider">Tertiary Education</span>
+                            <h3 class="font-bold text-gray-900 text-lg">Systems Technology Institute (STI College–Legazpi)</h3>
+                            <p class="text-sm font-medium text-gray-700">Bachelor of Science in Information Technology (BSIT) — 4th Year</p>
+                            <p class="text-xs text-gray-500">2023 – Present | Legazpi City, Albay</p>
+                        </div>
+                    </div>
+
+                    <!-- SHS -->
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 flex flex-col sm:flex-row gap-4">
+                        <div class="w-12 h-12 rounded-lg bg-navy-800 text-white flex-shrink-0 flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-school"></i>
+                        </div>
+                        <div class="space-y-1">
+                            <span class="text-xs font-bold text-accent-blue uppercase tracking-wider">Senior High School</span>
+                            <h3 class="font-bold text-gray-900 text-lg">Legazpi City National High School</h3>
+                            <p class="text-sm font-medium text-gray-700">STEM Strand (Science, Technology, Engineering, and Mathematics) — <span class="text-green-600 font-semibold">With Honors</span></p>
+                            <p class="text-xs text-gray-500">Graduated 2023 | Legazpi City, Albay</p>
+                        </div>
+                    </div>
+
+                    <!-- JHS -->
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 flex flex-col sm:flex-row gap-4">
+                        <div class="w-12 h-12 rounded-lg bg-gray-700 text-white flex-shrink-0 flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <div class="space-y-1">
+                            <span class="text-xs font-bold text-accent-blue uppercase tracking-wider">Junior High School</span>
+                            <h3 class="font-bold text-gray-900 text-lg">Legazpi City National High School</h3>
+                            <p class="text-xs text-gray-500">Completed 2021 | Legazpi City, Albay</p>
+                        </div>
+                    </div>
+
+                    <!-- Elementary -->
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 flex flex-col sm:flex-row gap-4">
+                        <div class="w-12 h-12 rounded-lg bg-gray-600 text-white flex-shrink-0 flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-child"></i>
+                        </div>
+                        <div class="space-y-1">
+                            <span class="text-xs font-bold text-accent-blue uppercase tracking-wider">Elementary Education</span>
+                            <h3 class="font-bold text-gray-900 text-lg">Matanag Elementary School</h3>
+                            <p class="text-xs text-gray-500">2011 – 2017 | Legazpi City, Albay</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Achievements Section -->
+        <section id="certifications" class="py-16 bg-gray-50 border-b border-gray-200">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-navy-800">Certifications & Training</h2>
+                    <div class="w-16 h-1 bg-accent-blue mx-auto mt-2 rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                    <!-- AWS -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm space-y-2">
+                        <span class="text-xs font-bold text-yellow-700 bg-yellow-50 px-2.5 py-1 rounded">In Progress</span>
+                        <h3 class="font-bold text-gray-900 text-base">AWS Academy Cloud Foundations</h3>
+                        <p class="text-xs text-gray-600">AWS Academy | September 2026 – Present</p>
+                        <p class="text-xs text-gray-500">Covering cloud concepts, AWS core services, security, architecture, and pricing models.</p>
+                    </div>
+
+                    <!-- DICT Competition -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm space-y-2">
+                        <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2.5 py-1 rounded">Certificate of Participation</span>
+                        <h3 class="font-bold text-gray-900 text-base">DICT Region V NICT Month 2026 Coding Competition</h3>
+                        <p class="text-xs text-gray-600">DICT Region V | June 24, 2026</p>
+                        <p class="text-xs text-gray-500">Participated in regional coding competition at SLTCI Building, Legazpi City.</p>
+                    </div>
+
+                    <!-- Oracle -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm space-y-2">
+                        <span class="text-xs font-bold text-green-700 bg-green-50 px-2.5 py-1 rounded">Certificate of Completion</span>
+                        <h3 class="font-bold text-gray-900 text-base">Java Fundamentals</h3>
+                        <p class="text-xs text-gray-600">Oracle Academy | June 19, 2024</p>
+                        <p class="text-xs text-gray-500">Covering fundamental Java programming concepts, object-oriented logic, and syntax.</p>
+                    </div>
+
+                    <!-- NSTP -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm space-y-2">
+                        <span class="text-xs font-bold text-green-700 bg-green-50 px-2.5 py-1 rounded">Certificate of Completion</span>
+                        <h3 class="font-bold text-gray-900 text-base">National Service Training Program (CWTS)</h3>
+                        <p class="text-xs text-gray-600">STI College–Legazpi | June 27, 2024</p>
+                        <p class="text-xs text-gray-500">Participated in civic welfare activities and community awareness campaigns.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-navy-800">Get In Touch</h2>
+                    <div class="w-16 h-1 bg-accent-blue mx-auto mt-2 rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <!-- Contact Cards -->
+                    <div class="space-y-4">
+                        <a href="mailto:rivzkyalcera@gmail.com" class="bg-gray-50 p-5 rounded-xl border border-gray-200 flex items-center gap-4 hover:border-accent-blue transition-colors">
+                            <div class="w-10 h-10 rounded-lg bg-blue-50 text-accent-blue flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-gray-500 uppercase">Email Address</h4>
+                                <p class="text-sm font-semibold text-gray-900">rivzkyalcera@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <a href="tel:+639954700850" class="bg-gray-50 p-5 rounded-xl border border-gray-200 flex items-center gap-4 hover:border-accent-blue transition-colors">
+                            <div class="w-10 h-10 rounded-lg bg-blue-50 text-accent-blue flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-gray-500 uppercase">Phone Number</h4>
+                                <p class="text-sm font-semibold text-gray-900">+(63) 995-470-0850</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/rivzky-barasona-alcera" target="_blank" rel="noopener noreferrer" class="bg-gray-50 p-5 rounded-xl border border-gray-200 flex items-center gap-4 hover:border-accent-blue transition-colors">
+                            <div class="w-10 h-10 rounded-lg bg-blue-50 text-accent-blue flex items-center justify-center text-lg">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-gray-500 uppercase">LinkedIn Profile</h4>
+                                <p class="text-sm font-semibold text-gray-900">linkedin.com/in/rivzky-barasona-alcera</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Direct Email Prompt Box -->
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 flex flex-col justify-center text-center space-y-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 text-accent-blue mx-auto flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-900 text-lg">Send a Direct Inquiry</h3>
+                        <p class="text-xs text-gray-600">
+                            Click below to open your default email application and send a direct message regarding internship slots or IT inquiries.
+                        </p>
+                        <a href="mailto:rivzkyalcera@gmail.com?subject=Inquiry%20from%20Portfolio" class="inline-block py-3 px-6 bg-navy-900 hover:bg-accent-blue text-white text-sm font-semibold rounded-lg transition-colors">
+                            Compose Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy-800 text-white py-8 border-t border-navy-900">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
+            <p class="text-sm text-gray-300">
+                &copy; 2026 Rivzky Barasona Alcera. All Rights Reserved.
+            </p>
+            <p class="text-xs text-gray-400">
+                STI College–Legazpi | Euthenics 2 Digital Portfolio
+            </p>
+        </div>
+    </footer>
+
+    <!-- Project Modals -->
+    <div id="modal-backdrop" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl max-w-lg w-full p-6 space-y-4 shadow-2xl">
+            <div class="flex justify-between items-center border-b border-gray-100 pb-3">
+                <h3 id="modal-title" class="font-bold text-gray-900 text-lg">Project Title</h3>
+                <button onclick="closeModal()" class="text-gray-400 hover:text-gray-600 text-xl font-bold" aria-label="Close modal">&times;</button>
+            </div>
+            <div id="modal-body" class="text-xs sm:text-sm text-gray-600 space-y-3">
+                <!-- Dynamic Content -->
+            </div>
+            <div class="pt-4 border-t border-gray-100 flex justify-end">
+                <button onclick="closeModal()" class="px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-800 text-xs font-semibold rounded transition-colors">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Mobile Menu and Modals -->
+    <script src="script.js"></script>
+</body>
+</html>
