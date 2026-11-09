@@ -101,6 +101,20 @@ tailwind.config = {
                     <p><strong>Key Skills:</strong> Documentation, UI Design, Research, System Testing, Client Communication</p>
                 `
             },
+            capstoneFeatures: {
+                title: "Barangay Management System — Project Features",
+                content: `
+                    <ul class="list-disc space-y-2 pl-5">
+                        <li><strong>Resident management:</strong> Resident registration, records, and archive access.</li>
+                        <li><strong>Barangay services:</strong> Online certificate requests, including barangay and business clearances.</li>
+                        <li><strong>Administrative dashboard:</strong> Overview of population, voter records, service requests, and barangay officials.</li>
+                        <li><strong>Community updates:</strong> Announcements for residents and barangay users.</li>
+                        <li><strong>Incident and complaint tracking:</strong> Blotter records and complaint management.</li>
+                        <li><strong>Resident mobile dashboard:</strong> Responsive layout with quick actions, recent announcements, and request tracking.</li>
+                        <li><strong>Additional capabilities:</strong> OCR-assisted document digitization and offline data synchronization.</li>
+                    </ul>
+                `
+            },
             smartledger: {
                 title: "SmartLedger — Personal & Micro-Business Finance System",
                 content: `
