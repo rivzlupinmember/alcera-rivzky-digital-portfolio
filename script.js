@@ -130,6 +130,19 @@ tailwind.config = {
                     <p><strong>My Contributions:</strong> Assisted in organizing system specifications, designing user interface layouts, and testing core system features.</p>
                     <p><strong>Key Skills:</strong> Systems Analysis, Specification Organizing, UI Mockups, Functionality Testing</p>
                 `
+            },
+            transeaseFeatures: {
+                title: "TransEase — Project Features",
+                content: `
+                    <ul class="list-disc space-y-2 pl-5">
+                        <li><strong>Administrative dashboard:</strong> At-a-glance summaries for drivers, passengers, trips, and revenue.</li>
+                        <li><strong>Passenger management:</strong> Searchable passenger records with registration status and record actions.</li>
+                        <li><strong>Driver management:</strong> Driver records and active-driver summaries.</li>
+                        <li><strong>Trip management:</strong> Create trips and review records with routes, distance, fare, date, and completion status.</li>
+                        <li><strong>Fare and report summaries:</strong> Fare information and daily trip and revenue reporting.</li>
+                        <li><strong>Quick actions:</strong> Shortcuts for creating trips, adding drivers or passengers, and viewing reports.</li>
+                    </ul>
+                `
             }
         };
 
