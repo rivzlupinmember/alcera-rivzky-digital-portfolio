@@ -123,6 +123,19 @@ tailwind.config = {
                     <p><strong>Key Skills:</strong> Requirements Gathering, UI Design Assistance, Technical Documentation, System Testing</p>
                 `
             },
+            smartledgerFeatures: {
+                title: "SmartLedger — Project Features",
+                content: `
+                    <ul class="list-disc space-y-2 pl-5">
+                        <li><strong>Financial overview:</strong> Dashboard cards for earnings, spending, and savings.</li>
+                        <li><strong>Balance summary:</strong> Dedicated area for viewing a summarized financial balance.</li>
+                        <li><strong>Expense summary:</strong> Visual expense chart with category totals.</li>
+                        <li><strong>Finance navigation:</strong> Sections for invoices, payments, wallets, analytics, activity, and transactions.</li>
+                        <li><strong>Card and AI assistance panels:</strong> Dashboard areas for card information and AI assistance.</li>
+                        <li><strong>Account access screens:</strong> Login interface with password recovery and sign-up options.</li>
+                    </ul>
+                `
+            },
             transease: {
                 title: "TransEase — Smart Tricycle Fare & Passenger Management",
                 content: `
