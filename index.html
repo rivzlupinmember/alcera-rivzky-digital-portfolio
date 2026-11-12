@@ -10,12 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=header-photo-1">
+    <link rel="stylesheet" href="styles.css?v=cinematic-portrait-2">
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed flex flex-col min-h-screen">
 
+    <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
+
     <!-- Header & Navigation -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200">
+    <header class="site-header sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <!-- Brand / Name -->
@@ -73,43 +75,48 @@
 
     <main class="flex-grow">
         <!-- Hero Section -->
-        <section id="home" class="bg-gradient-to-b from-slate-100 to-gray-50 py-16 md:py-24 border-b border-gray-200">
+        <section id="home" class="cinematic-hero">
+            <div class="hero-grid-pattern" aria-hidden="true"></div>
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex flex-col md:flex-row items-center justify-between gap-12">
-                    <!-- Text Profile -->
-                    <div class="flex-1 space-y-6 text-center md:text-left">
-                        <div class="inline-block px-3 py-1 bg-blue-100 text-accent-blue font-semibold text-xs rounded-full uppercase tracking-wider">
-                            Digital Portfolio
+                <div class="hero-layout">
+                    <div class="hero-copy">
+                        <p class="hero-eyebrow"><span></span> Digital portfolio · 2026</p>
+                        <p class="hero-name">Rivzky Barasona Alcera</p>
+                        <h1>Technology with purpose.<br><span>Systems that serve people.</span></h1>
+                        <p class="hero-role">4th-Year BSIT Student <span>/</span> Aspiring IT Officer</p>
+                        <p class="hero-intro">
+                            I’m building a career at the intersection of IT systems, practical problem-solving, and public service—learning how dependable technology can make everyday work better for people.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#projects" class="hero-button hero-button-primary">Explore my work <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+                            <a href="#contact" class="hero-button hero-button-secondary">Let’s connect <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                         </div>
-                        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-navy-800 tracking-tight">
-                            Rivzky Barasona Alcera
-                        </h1>
-                        <p class="text-lg md:text-xl text-gray-600 font-medium">
-                            4th-Year BSIT Student & Aspiring IT Officer
-                        </p>
-                        <p class="text-gray-600 max-w-2xl text-sm sm:text-base">
-                            Building foundational skills in IT infrastructure, web systems, database management, and technical troubleshooting to support digital transformation in public service and enterprise environments.
-                        </p>
-                        <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-2">
-                            <a href="#contact" class="px-6 py-3 bg-navy-900 hover:bg-accent-blue text-white font-semibold rounded-lg shadow-md transition-colors text-sm">
-                                Get In Touch
-                            </a>
-                            <a href="#projects" class="px-6 py-3 bg-white hover:bg-gray-100 text-gray-800 font-semibold rounded-lg border border-gray-300 shadow-sm transition-colors text-sm">
-                                View Projects
-                            </a>
+                        <div class="hero-focus">
+                            <span>Currently focused on</span>
+                            <div><b>Systems support</b><i></i><b>Web systems</b><i></i><b>Cloud foundations</b></div>
                         </div>
                     </div>
 
-                    <!-- Profile Photos -->
-                    <div class="flex-shrink-0">
-                        <div class="w-48 h-48 sm:w-56 sm:h-56 rounded-full bg-gradient-to-tr from-navy-900 to-accent-blue p-1.5 shadow-xl">
-                            <div class="w-full h-full overflow-hidden rounded-full bg-white">
-                                <img src="assets/profile-light.jpg" alt="Formal portrait of Rivzky Barasona Alcera" class="profile-photo profile-photo-light h-full w-full object-cover object-[center_28%]">
-                                <img src="assets/profile-dark.jpg" alt="Formal portrait of Rivzky Barasona Alcera in a dark setting" class="profile-photo profile-photo-dark h-full w-full object-cover object-[center_28%]">
-                            </div>
+                    <div class="hero-visual" aria-label="Portrait and professional focus">
+                        <div class="hero-orbit hero-orbit-outer" aria-hidden="true"></div>
+                        <div class="hero-orbit hero-orbit-inner" aria-hidden="true"></div>
+                        <div class="hero-image-frame">
+                            <img src="assets/profile-light.jpg" alt="Portrait of Rivzky Barasona Alcera" class="profile-photo profile-photo-light">
+                            <img src="assets/profile-dark.jpg" alt="Portrait of Rivzky Barasona Alcera in a dark setting" class="profile-photo profile-photo-dark">
+                            <div class="hero-image-caption"><span>Curious by nature.</span><span>Service-minded by choice.</span></div>
                         </div>
+                        <div class="hero-float-card hero-float-top">
+                            <span class="hero-float-icon"><i class="fa-solid fa-network-wired" aria-hidden="true"></i></span>
+                            <span><small>BUILDING SKILLS IN</small><b>IT &amp; systems</b></span>
+                        </div>
+                        <div class="hero-float-card hero-float-bottom">
+                            <span class="hero-status-dot"></span>
+                            <span><small>MY APPROACH</small><b>Learn · Build · Improve</b></span>
+                        </div>
+                        <span class="hero-visual-index" aria-hidden="true">01 — 09</span>
                     </div>
                 </div>
+                <a class="hero-scroll-cue" href="#about"><span></span> Scroll to explore</a>
             </div>
         </section>
 
@@ -162,6 +169,80 @@
                 <div class="text-center max-w-3xl mx-auto mb-12">
                     <h2 class="text-2xl sm:text-3xl font-bold text-navy-800">Skills & Competencies</h2>
                     <div class="w-16 h-1 bg-accent-blue mx-auto mt-2 rounded-full"></div>
+                </div>
+
+                <div class="mb-10 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm sm:p-8">
+                    <div class="mx-auto mb-8 max-w-3xl text-center">
+                        <h3 class="text-xl font-bold text-navy-800 sm:text-2xl">My Tech Stack</h3>
+                        <p class="mt-2 text-sm leading-relaxed text-gray-600 sm:text-base">
+                            Technologies I have learned and am developing through coursework and hands-on projects.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 md:grid-cols-4 lg:grid-cols-5">
+                        <div class="flex min-h-36 flex-col items-center justify-center gap-3 rounded-xl border border-gray-100 bg-gray-50 p-4 text-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java logo" class="h-12 w-12 object-contain" loading="lazy" decoding="async">
+                            <div>
+                                <p class="text-sm font-semibold text-gray-900">Java</p>
+                                <span class="mt-1 inline-block rounded bg-blue-50 px-2 py-1 text-[10px] font-semibold text-accent-blue">Foundational</span>
+                            </div>
+                        </div>
+                        <div class="flex min-h-36 flex-col items-center justify-center gap-3 rounded-xl border border-gray-100 bg-gray-50 p-4 text-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C sharp logo" class="h-12 w-12 object-contain" loading="lazy" decoding="async">
+                            <div>
+                                <p class="text-sm font-semibold text-gray-900">C#</p>
+                                <span class="mt-1 inline-block rounded bg-blue-50 px-2 py-1 text-[10px] font-semibold text-accent-blue">Basic</span>
+                            </div>
+                        </div>
+                        <div class="flex min-h-36 flex-col items-center justify-center gap-3 rounded-xl border border-gray-100 bg-gray-50 p-4 text-center">
+                            <img src="https://cdn.simpleicons.org/python" alt="Python logo" class="h-12 w-12 object-contain" loading="lazy" decoding="async">
+                            <div>
+                                <p class="text-sm font-semibold text-gray-900">Python</p>
+                                <span class="mt-1 inline-block rounded bg-blue-50 px-2 py-1 text-[10px] font-semibold text-accent-blue">Basic</span>
+                            </div>
+                        </div>
+                        <div class="flex min-h-36 flex-col items-center justify-center gap-3 rounded-xl border border-gray-100 bg-gray-50 p-4 text-center">
+                            <img src="https://cdn.simpleicons.org/html5" alt="HTML5 logo" class="h-12 w-12 object-contain" loading="lazy" decoding="async">
+                            <div>
+                                <p class="text-sm font-semibold text-gray-900">HTML5</p>
+                                <span class="mt-1 inline-block rounded bg-blue-50 px-2 py-1 text-[10px] font-semibold text-accent-blue">Foundational</span>
+                            </div>
+                        </div>
+                        <div class="flex min-h-36 flex-col items-center justify-center gap-3 rounded-xl border border-gray-100 bg-gray-50 p-4 text-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3 logo" class="h-12 w-12 object-contain" loading="lazy" decoding="async">
+                            <div>
+                                <p class="text-sm font-semibold text-gray-900">CSS3</p>
+                                <span class="mt-1 inline-block rounded bg-blue-50 px-2 py-1 text-[10px] font-semibold text-accent-blue">Foundational</span>
+                            </div>
+                        </div>
+                        <div class="flex min-h-36 flex-col items-center justify-center gap-3 rounded-xl border border-gray-100 bg-gray-50 p-4 text-center">
+                            <img src="https://cdn.simpleicons.org/javascript" alt="JavaScript logo" class="h-12 w-12 object-contain" loading="lazy" decoding="async">
+                            <div>
+                                <p class="text-sm font-semibold text-gray-900">JavaScript</p>
+                                <span class="mt-1 inline-block rounded bg-blue-50 px-2 py-1 text-[10px] font-semibold text-accent-blue">Foundational</span>
+                            </div>
+                        </div>
+                        <div class="flex min-h-36 flex-col items-center justify-center gap-3 rounded-xl border border-gray-100 bg-gray-50 p-4 text-center">
+                            <img src="https://cdn.simpleicons.org/php" alt="PHP logo" class="h-12 w-12 object-contain" loading="lazy" decoding="async">
+                            <div>
+                                <p class="text-sm font-semibold text-gray-900">PHP</p>
+                                <span class="mt-1 inline-block rounded bg-blue-50 px-2 py-1 text-[10px] font-semibold text-accent-blue">Foundational</span>
+                            </div>
+                        </div>
+                        <div class="flex min-h-36 flex-col items-center justify-center gap-3 rounded-xl border border-gray-100 bg-gray-50 p-4 text-center">
+                            <img src="https://cdn.simpleicons.org/mysql" alt="MySQL logo" class="h-12 w-12 object-contain" loading="lazy" decoding="async">
+                            <div>
+                                <p class="text-sm font-semibold text-gray-900">SQL / MySQL</p>
+                                <span class="mt-1 inline-block rounded bg-blue-50 px-2 py-1 text-[10px] font-semibold text-accent-blue">Foundational</span>
+                            </div>
+                        </div>
+                        <div class="flex min-h-36 flex-col items-center justify-center gap-3 rounded-xl border border-gray-100 bg-gray-50 p-4 text-center">
+                            <i class="fa-brands fa-aws text-5xl text-[#FF9900]" role="img" aria-label="Amazon Web Services logo"></i>
+                            <div>
+                                <p class="text-sm font-semibold text-gray-900">AWS</p>
+                                <span class="mt-1 inline-block rounded bg-yellow-50 px-2 py-1 text-[10px] font-semibold text-yellow-700">In Progress</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

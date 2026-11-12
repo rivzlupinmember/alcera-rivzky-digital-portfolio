@@ -177,3 +177,63 @@ tailwind.config = {
                 closeModal();
             }
         });
+
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const contentSections = document.querySelectorAll('main > section:not(#home)');
+
+        if (!prefersReducedMotion && 'IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.12,
+                rootMargin: '0px 0px -8% 0px'
+            });
+
+            contentSections.forEach((section) => {
+                const container = section.querySelector(':scope > .max-w-6xl');
+                if (!container) {
+                    return;
+                }
+
+                const revealGroups = Array.from(container.children);
+                revealGroups.forEach((group) => {
+                    group.dataset.reveal = '';
+                    revealObserver.observe(group);
+
+                    if (group.matches('.grid, .space-y-6')) {
+                        Array.from(group.children).forEach((item, index) => {
+                            item.dataset.reveal = '';
+                            item.style.setProperty('--reveal-delay', `${Math.min(index, 5) * 80}ms`);
+                            revealObserver.observe(item);
+                        });
+                    }
+                });
+            });
+
+            document.documentElement.classList.add('motion-ready');
+        }
+
+        const scrollProgress = document.getElementById('scroll-progress');
+        let progressFrame = 0;
+
+        function updateScrollProgress() {
+            if (progressFrame) {
+                return;
+            }
+
+            progressFrame = window.requestAnimationFrame(() => {
+                const scrollableDistance = document.documentElement.scrollHeight - window.innerHeight;
+                const progress = scrollableDistance > 0 ? window.scrollY / scrollableDistance : 0;
+                scrollProgress.style.transform = `scaleX(${Math.min(1, Math.max(0, progress))})`;
+                progressFrame = 0;
+            });
+        }
+
+        window.addEventListener('scroll', updateScrollProgress, { passive: true });
+        window.addEventListener('resize', updateScrollProgress);
+        updateScrollProgress();
